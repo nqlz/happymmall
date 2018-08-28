@@ -1,0 +1,29 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall前端代码",
+  "main": "index.js",
+  "scripts": {
+    "dev":"WEBPACK_ENV=dev webpack-dev-server --inline --port 8089",
+    "dev_win":"set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8089",
+    "dist":"WEBPACK_ENV=online webpack -p",
+    "dist_win":"set WEBPACK_ENV=online && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:happytome/mmall-fe.git"
+  },
+  "author": "tradeoff",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.15.0"
+  },
+  "dependencies": {}
+}
